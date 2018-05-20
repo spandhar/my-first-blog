@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from myblog.models import Post
 from django.contrib.auth.models import User
+#import pdb; pdb.set_trace()
 
 def post_list(request):
 	me = User.objects.get(username="breakbadsp")
